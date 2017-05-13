@@ -5,20 +5,37 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class PreloadedTurtle<T extends PreloadedTurtle> extends BasicTurtle<T> {
-  public final Set<RenderAction> actions;
-  public PreloadedTurtle (final Set<RenderAction> _actions) {actions = _actions;}
+    public final Set<RenderAction> actions;
 
-  public SortedSet<RenderAction> actions (final Viewport v) {
-    final SortedSet<RenderAction> result = new TreeSet<RenderAction> (new PerspectiveComparator (v));
-    for (final RenderAction a : actions) if (v.shouldCancel ()) break;
-                                         else                   result.add (a);
-    return result;
-  }
+    public PreloadedTurtle(final Set<RenderAction> _actions) {
+        actions = _actions;
+    }
 
-  public TurtleState serialize   ()                    {return null;}
-  public T           deserialize (final TurtleState t) {return (T) this;}
+    public SortedSet<RenderAction> actions(final Viewport v) {
+        final SortedSet<RenderAction> result = new TreeSet<RenderAction>(new PerspectiveComparator(v));
+        for (final RenderAction a : actions)
+            if (v.shouldCancel()) break;
+            else result.add(a);
+        return result;
+    }
 
-  public T             create  ()               {return (T) this;}
-  public T             clone   ()               {return (T) this;}
-  public TurtleCommand applyTo (final Turtle t) {return this;}
+    public TurtleState serialize() {
+        return null;
+    }
+
+    public T deserialize(final TurtleState t) {
+        return (T) this;
+    }
+
+    public T create() {
+        return (T) this;
+    }
+
+    public T clone() {
+        return (T) this;
+    }
+
+    public TurtleCommand applyTo(final Turtle t) {
+        return this;
+    }
 }
