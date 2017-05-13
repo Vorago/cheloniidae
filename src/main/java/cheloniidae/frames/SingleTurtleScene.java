@@ -8,14 +8,14 @@ public abstract class SingleTurtleScene<T extends Turtle> {
 
     protected final TurtleStack stack = new TurtleStack();
 
+    public abstract TurtleCommand commands();
+
     public SingleTurtleScene() {
         window = createWindow();
         turtle = createTurtle();
         initialize();
         run();
     }
-
-    public abstract TurtleCommand commands();
 
     public T createTurtle() {
         return (T) new StandardRotationalTurtle();
@@ -35,4 +35,17 @@ public abstract class SingleTurtleScene<T extends Turtle> {
         window.pause(0);
         return this;
     }
-} 
+
+    public void run(TurtleCommand command) {
+        turtle.run(command);
+        window.pause(0);
+    }
+
+    public Turtle getTurtle() {
+        return turtle;
+    }
+
+    public TurtleWindow getWindow() {
+        return window;
+    }
+}
