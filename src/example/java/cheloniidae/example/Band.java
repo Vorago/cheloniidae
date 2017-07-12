@@ -1,3 +1,5 @@
+package cheloniidae.example;
+
 import cheloniidae.PathwiseTriangleConnector;
 import cheloniidae.StandardRotationalTurtle;
 import cheloniidae.TurtleCommand;
@@ -8,13 +10,13 @@ import java.awt.*;
 
 import static cheloniidae.frames.CoreCommands.*;
 
-public class band extends SingleTurtleScene<PathwiseTriangleConnector<StandardRotationalTurtle>> {
+public class Band extends SingleTurtleScene<PathwiseTriangleConnector<StandardRotationalTurtle>> {
     public static void main(String[] args) {
-        new band();
+        new Band();
     }
 
     public PathwiseTriangleConnector<StandardRotationalTurtle> createTurtle() {
-        return new PathwiseTriangleConnector<StandardRotationalTurtle>();
+        return new PathwiseTriangleConnector<>();
     }
 
     public TurtleCommand commands() {

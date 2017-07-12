@@ -1,12 +1,14 @@
+package cheloniidae.example;
+
 import cheloniidae.TurtleCommand;
 import cheloniidae.frames.SingleTurtleScene;
 
 import static cheloniidae.frames.CoreCommands.*;
 import static cheloniidae.frames.CoreCommands.triangle;
 
-public class cube extends SingleTurtleScene {
+public class Cube extends SingleTurtleScene {
     public static void main(String[] args) {
-        new cube();
+        new Cube();
     }
 
     public TurtleCommand commands() {

@@ -1,3 +1,5 @@
+package cheloniidae.example;
+
 import cheloniidae.TurtleCommand;
 import cheloniidae.frames.DarkSingleTurtleScene;
 
@@ -5,9 +7,9 @@ import java.awt.*;
 
 import static cheloniidae.frames.CoreCommands.*;
 
-public class kochcurve extends DarkSingleTurtleScene {
+public class Kochcurve extends DarkSingleTurtleScene {
     public static void main(final String[] args) {
-        new kochcurve();
+        new Kochcurve();
     }
 
     public TurtleCommand commands() {

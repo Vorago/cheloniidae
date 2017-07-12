@@ -1,3 +1,5 @@
+package cheloniidae.example;
+
 import cheloniidae.TurtleCommand;
 import cheloniidae.frames.SingleTurtleScene;
 
@@ -7,9 +9,9 @@ import static cheloniidae.frames.CoreCommands.triangle;
 // Yet another gasket attempt that I'm deferring to later.
 // If anyone can fix it, I'd love to have the correct version.
 
-public class solidgasket extends SingleTurtleScene {
+public class SolidGasket extends SingleTurtleScene {
     public static void main(String[] args) {
-        new solidgasket();
+        new SolidGasket();
     }
 
     public TurtleCommand commands() {

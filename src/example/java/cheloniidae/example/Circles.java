@@ -1,11 +1,13 @@
+package cheloniidae.example;
+
 import cheloniidae.TurtleCommand;
 import cheloniidae.frames.SingleTurtleScene;
 
 import static cheloniidae.frames.CoreCommands.*;
 
-public class circles extends SingleTurtleScene {
+public class Circles extends SingleTurtleScene {
     public static void main(String[] args) {
-        new circles();
+        new Circles();
     }
 
     public TurtleCommand commands() {

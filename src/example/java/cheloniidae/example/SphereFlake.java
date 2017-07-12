@@ -1,12 +1,14 @@
+package cheloniidae.example;
+
 import cheloniidae.TurtleCommand;
 import cheloniidae.frames.SingleTurtleScene;
 
 import static cheloniidae.frames.CoreCommands.*;
 import static java.lang.Math.sin;
 
-public class sphereflake extends SingleTurtleScene {
+public class SphereFlake extends SingleTurtleScene {
     public static void main(String[] args) {
-        new sphereflake();
+        new SphereFlake();
     }
 
     public TurtleCommand commands() {
@@ -28,9 +30,9 @@ public class sphereflake extends SingleTurtleScene {
                         visible(false));
 
         final TurtleCommand go = jump(radius * 4.0 / 3.0);
-        final TurtleCommand recursiveStep = recurse("sphereflake", 3, scale(1.0 / 3.0, true), visible(false));
+        final TurtleCommand recursiveStep = recurse("cheloniidae.example.SphereFlake", 3, scale(1.0 / 3.0, true), visible(false));
 
-        return recursiveBlock("sphereflake",
+        return recursiveBlock("cheloniidae.example.SphereFlake",
                 color(0.5, 0.3, 0.2, 0.1),
                 sphere,
                 inductiveReplicator(6, turn(60), go, recursiveStep),

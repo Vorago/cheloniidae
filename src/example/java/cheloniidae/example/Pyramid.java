@@ -1,3 +1,5 @@
+package cheloniidae.example;
+
 import cheloniidae.StandardRotationalTurtle;
 import cheloniidae.TurtleCommand;
 import cheloniidae.commands.SupportsPosition;
@@ -6,9 +8,9 @@ import cheloniidae.frames.SingleTurtleScene;
 import static cheloniidae.frames.CoreCommands.*;
 import static cheloniidae.frames.CoreCommands.triangle;
 
-public class pyramid extends SingleTurtleScene {
+public class Pyramid extends SingleTurtleScene {
     public static void main(String[] args) {
-        new pyramid();
+        new Pyramid();
     }
 
     public TurtleCommand commands() {

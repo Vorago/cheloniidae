@@ -28,7 +28,7 @@ public class CartesianTriangle extends ViewportCaching implements HasPerspective
 
         v.representativePoint(midpoint).representativePoint(v1).representativePoint(v2).representativePoint(v3);
 
-        // Render the triangle only when all three points are in front of the camera.
+        // Render the cheloniidae.example.Triangle only when all three points are in front of the camera.
         // I'm being lazy here -- there is a way to solve for the points' projections to
         // z = 1 like we did for Cartesian lines, but the number of cases is much larger.
         if (tv1.z > 0 && tv2.z > 0 && tv3.z > 0) {

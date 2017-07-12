@@ -60,7 +60,7 @@ public class PathwiseTriangleConnector<T extends EuclideanTurtle>
                 final Vector sv1 = points.get(i);
                 final Vector sv2 = points.get(j);
 
-                // If the triangle's area is below a certain amount, then we don't add the triangle.
+                // If the cheloniidae.example.Triangle's area is below a certain amount, then we don't add the cheloniidae.example.Triangle.
                 // This is to prevent degenerate triangles from slowing the scene render operations,
                 // which might occur if the user moved one turtle but not the other.
                 if (tv1.clone().subtract(sv1).cross(sv2.clone().subtract(sv1)).lengthSquared() > 1.0e-10)

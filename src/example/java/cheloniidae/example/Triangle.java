@@ -1,17 +1,17 @@
+package cheloniidae.example;
+
 import cheloniidae.TurtleCommand;
 import cheloniidae.frames.SingleTurtleScene;
 
 import static cheloniidae.frames.CoreCommands.*;
+import static cheloniidae.frames.CoreCommands.triangle;
 
-public class spiral extends SingleTurtleScene {
+public class Triangle extends SingleTurtleScene {
     public static void main(String[] args) {
-        new spiral();
+        new Triangle();
     }
 
     public TurtleCommand commands() {
-        return repeat(5760, pitch(0.25),
-                move(10.0),
-                pitch(-0.25),
-                turn(4.0));
+        return triangle(move(100), sequence(turn(60), move(100)));
     }
 }

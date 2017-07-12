@@ -7,7 +7,7 @@ import cheloniidae.TurtleCommand;
 
 public class Parallelize implements Transformation<TurtleCommand> {
     // Sometimes the order of execution of turtle cheloniidae.commands matters. One example of this is when they're
-    // operating in parallel constructing triangles using a pathwise triangle connector. In this case,
+    // operating in parallel constructing triangles using a pathwise Triangle connector. In this case,
     // each turtle should move one step and then the emitter should be run. However, normally serial
     // turtle command compositions distribute across turtle groups such as connectors. To fix this, we
     // wrap those cheloniidae.commands inside of non-distributive proxies.

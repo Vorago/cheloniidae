@@ -1,11 +1,13 @@
+package cheloniidae.example;
+
 import cheloniidae.TurtleCommand;
 import cheloniidae.frames.SingleTurtleScene;
 
 import static cheloniidae.frames.CoreCommands.*;
 
-public class bandsplit extends SingleTurtleScene {
+public class BandSplit extends SingleTurtleScene {
     public static void main(String[] args) {
-        new bandsplit();
+        new BandSplit();
     }
 
     public TurtleCommand commands() {

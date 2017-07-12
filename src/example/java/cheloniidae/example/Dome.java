@@ -1,11 +1,13 @@
+package cheloniidae.example;
+
 import cheloniidae.TurtleCommand;
 import cheloniidae.frames.SingleTurtleScene;
 
 import static cheloniidae.frames.CoreCommands.*;
 
-public class dome extends SingleTurtleScene {
+public class Dome extends SingleTurtleScene {
     public static void main(String[] args) {
-        new dome();
+        new Dome();
     }
 
     public TurtleCommand commands() {

@@ -1,12 +1,14 @@
+package cheloniidae.example;
+
 import cheloniidae.TurtleCommand;
 import cheloniidae.frames.SingleTurtleScene;
 import cheloniidae.resources.BasicTextRenderer;
 
 import static cheloniidae.frames.CoreCommands.*;
 
-public class text extends SingleTurtleScene {
+public class Text extends SingleTurtleScene {
     public static void main(String[] args) {
-        new text();
+        new Text();
     }
 
     public TurtleCommand commands() {

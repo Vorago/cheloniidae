@@ -1,3 +1,5 @@
+package cheloniidae.example;
+
 import cheloniidae.TurtleCommand;
 import cheloniidae.frames.SingleTurtleScene;
 
@@ -5,9 +7,9 @@ import java.awt.*;
 
 import static cheloniidae.frames.CoreCommands.*;
 
-public class donut extends SingleTurtleScene {
+public class Donut extends SingleTurtleScene {
     public static void main(String[] args) {
-        new donut();
+        new Donut();
     }
 
     public TurtleCommand commands() {

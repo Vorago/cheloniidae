@@ -1,10 +1,12 @@
+package cheloniidae.example;
+
 import cheloniidae.StandardRotationalTurtle;
 import cheloniidae.TurtleWindow;
 import cheloniidae.Vector;
 
 import java.awt.*;
 
-public class cubes {
+public class Cubes {
     public static void main(String[] args) {
         TurtleWindow w = new TurtleWindow();
         StandardRotationalTurtle t = new StandardRotationalTurtle();

@@ -1,3 +1,5 @@
+package cheloniidae.example;
+
 import cheloniidae.TurtleCommand;
 import cheloniidae.frames.SingleTurtleScene;
 
@@ -5,9 +7,9 @@ import java.awt.*;
 
 import static cheloniidae.frames.CoreCommands.*;
 
-public class spheres extends SingleTurtleScene {
+public class Spheres extends SingleTurtleScene {
     public static void main(String[] args) {
-        new spheres();
+        new Spheres();
     }
 
     public TurtleCommand commands() {
